@@ -1,0 +1,595 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(228, 222, 222);
+  color: black;
+  /* position: sticky; */
+  top: 0;
+  justify-content: space-between;
+  padding: 2rem;
+  height: 6rem;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: black;
+  padding: 0.75rem;
+  margin: 0 1rem;
+  border-bottom: #06133a;
+}
+
+.navbar ul li a:hover {
+  border-bottom: #06133a solid 3px;
+  color: black;
+  background-color: rgb(228, 222, 222);
+}
+
+.navbar h1 a {
+  color: black;
+  background-color: rgb(228, 222, 222);
+}
+
+.btn {
+  color: #fff;
+  text-align: center;
+  background-color: #0e38b1;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+}
+
+.btn a {
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #06133a;
+  color: #fff;
+}
+
+.home {
+  display: flex;
+  background-color: rgb(228, 222, 222);
+}
+
+.text {
+  flex: 1;
+  padding-left: 7rem;
+  padding-top: 10rem;
+  padding-right: 8rem;
+  padding-bottom: 3rem;
+}
+
+.img {
+  flex: 1;
+  background: url("./img/01.png") no-repeat center center/cover;
+  height: 500px;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.section1 {
+  /* background:  url("./img/02.jpg") no-repeat center center/cover; */
+  background-color: #06133a;
+  color: #fff;
+}
+
+.section1 h1 {
+  padding-top: 7rem;
+  color: #fff;
+}
+
+.section1 p {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.sec1-head {
+  padding-left: 10rem;
+}
+
+.sec1-box {
+  display: flex;
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 15px;
+}
+.sec1-box h3 {
+  padding-bottom: 2rem;
+}
+.box1 {
+  flex: 1;
+  background-color: #fff;
+  color: black;
+  margin-left: 10rem;
+  margin-right: 1rem;
+  height: 300px;
+  border-radius: 10px;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.box2 {
+  flex: 1;
+  background-color: #fff;
+  color: black;
+  margin-right: 1rem;
+  height: 300px;
+  border-radius: 10px;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.box3 {
+  flex: 1;
+  background-color: #fff;
+  color: black;
+  margin-right: 10rem;
+  height: 300px;
+  border-radius: 10px;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.box-btn a:link,
+a:visited {
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 8px 33px;
+  margin-left: 38rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.box-btn a:hover,
+a:active {
+  background-color: #06133a;
+  color: white;
+}
+
+.section2 {
+  background-color: rgb(228, 222, 222);
+}
+
+.sec2-head {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.column-box {
+  padding-top: 3.5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 20px;
+  height: 450px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 400px;
+  border-radius: 10px;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 400px;
+  border-radius: 10px;
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 20px;
+  padding-top: 1rem;
+  font-size: 13px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.light-btn {
+  margin-left: 38rem;
+  padding-bottom: 2rem;
+}
+
+.light-btn a {
+  color: #0e38b1;
+  background-color: transparent;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px 33px;
+  border: 1px solid #0e38b1;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+#myProgress1 {
+  width: 100%;
+  border-radius: 8px;
+  background-color: grey;
+}
+
+#myBar1 {
+  width: 85%;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #0e38b1;
+}
+
+#myProgress2 {
+  width: 100%;
+  border-radius: 8px;
+  background-color: grey;
+}
+
+#myBar2 {
+  width: 45%;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #0e38b1;
+}
+
+#myProgress3 {
+  width: 100%;
+  border-radius: 8px;
+  background-color: grey;
+}
+
+#myBar3 {
+  width: 75%;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #0e38b1;
+}
+
+.sec3-img {
+  background: url("./img/06.jpg") no-repeat center center/cover;
+  height: 500px;
+  padding-top: 10rem;
+  z-index: 1;
+}
+
+.sec3-text {
+  background-color: #fff;
+  color: #06133a;
+  border-radius: 10px;
+  word-wrap: break-word;
+  height: 300px;
+  padding: 2rem 3rem;
+ margin-left: 50rem;
+ margin-right: 6rem;
+ box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
+ z-index: 33;
+}
+
+.sec3-text p{
+  font-size: 15px;
+  z-index: 33;
+}
+
+.light-btn2 {
+  padding-bottom: 2rem;
+}
+
+.light-btn2 a {
+  color: #0e38b1;
+  background-color: transparent;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px 33px;
+  border: 1px solid #0e38b1;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.section4{
+z-index: 1;
+}
+
+.sec4-img{
+  background: url("./img/08.jpg") no-repeat center center/cover;
+  height: 1100px;
+}
+
+.sec4-text{
+display: flex;
+color: black;
+padding-top: 10rem;
+padding-left: 7rem;
+}
+
+.sec4-text1{
+  flex: 1;
+}
+
+.sec4-text2{
+  flex: 1;
+}
+
+.sec4-text2 ul{
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  line-height: 2.3;
+  font-size: 35px;
+}
+
+.sec4-text3{
+  padding-top: 20rem;
+  text-align: center;
+  line-height: 2.0;
+}
+
+.sec4-text3 h1{
+  font-size: 50px;
+}
+
+.sec5-img{
+  background: url("./img/07.jpg") no-repeat center center/cover;
+  height: 170px;
+}
+
+.sec5-text{
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.section6{
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.sec6-img{
+  flex: 1;
+  background: url("./img/01.png") no-repeat center center/cover;
+  margin: 2rem 7rem;
+}
+
+.sec6-form{
+  flex: 1;
+  background-color: #f2f2f2;
+}
+
+.sec6-text{
+  text-align: justify;
+  padding: 0 2rem ;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  color: #06133a;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  background-color: lightgrey;
+  color: #06133a;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #06133a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #06133a;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.com-section1{
+  display: flex;
+}
+
+.com-sec-text1{
+  flex: 1;
+}
+
+.com-sec-img1{
+  flex: 1;
+  background: url("./img/05.jpg") no-repeat center center/cover;
+}
+
+.box-btn2 a {
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 8px 33px;
+  margin-top: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.box-btn2 a:hover {
+  background-color: black;
+  color: white;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #06133a; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 12px; /* Some padding */
+  border-radius: 45% /* Rounded corners */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.footer {
+  background-color: rgb(228, 222, 222);
+  padding-top: 3rem;
+}
+
+.myfoot {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border-top: black solid 1px;
+  border-radius: 10px;
+  border-bottom: black solid 1px;
+}
+
+.foot1 {
+  flex: 1;
+  text-align: left;
+  padding-left: 3rem;
+  padding-right: 7rem;
+  line-height: 1.5;
+}
+
+.foot2 {
+  flex: 1;
+}
+
+.foot2 ul {
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  line-height: 2.3;
+}
+
+.foot2 ul li a {
+  color: black;
+}
+
+.foot3 {
+  flex: 1;
+}
+
+.foot3 ul {
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  line-height: 2.3;
+}
+
+.foot3 ul li a {
+  color: black;
+}
+
+.foot4 {
+  flex: 1;
+}
+
+.foot4 ul {
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  line-height: 2.3;
+}
+
+.foot4 ul li a {
+  color: black;
+}
+
+.foot5 {
+  flex: 1;
+  padding-right: 3rem;
+}
+
+.foot5 p {
+  line-height: 2.3;
+}
+
+.footer__copy {
+  display: block;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  color: black;
+}
